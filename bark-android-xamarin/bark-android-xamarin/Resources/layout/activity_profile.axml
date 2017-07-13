@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--  Top Image Header -->
+        <ImageView
+            android:id="@+id/top_header_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_background"
+            android:contentDescription="" />
+    <!--  Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back_button"
+            android:background="@null"
+            android:contentDescription="" />
+    <!--  User Photo -->
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/top_header_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:elevation="5dp"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_logo"
+            android:contentDescription="" />
+    <!--  Bottom Header -->
+        <RelativeLayout
+            android:id="@+id/bottom_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_header_image"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="24dp">
+        <!--  Camera Button -->
+            <ImageButton
+                android:id="@+id/cameraButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/drop_down_option_menu"
+                android:layout_toStartOf="@+id/drop_down_option_menu"
+                android:src="@drawable/ic_camera"
+                android:background="@null"
+                android:contentDescription="" />
+        <!--  Menu -->
+            <ImageButton
+                android:id="@+id/drop_down_option_menu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_menu"
+                android:background="@null"
+                android:contentDescription="" />
+        <!--  User Name -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        <!--  Tag Label -->
+            <TextView
+                android:id="@+id/tagLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="A human's best friend."
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_header"
+            android:layout_margin="7dp"
+            android:orientation="vertical">
+        <!--  Email Label -->
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_shape"
+                android:clickable="false"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:text="" />
+        <!--  Date Joined Label -->
+            <TextView
+                android:id="@+id/userDateJoined"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/custom_shape"
+                android:clickable="false"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:text="" />
+        <!--  Dog Breed Label -->
+            <TextView
+                android:id="@+id/dogBreed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_shape"
+                android:clickable="false"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:text="" />
+        <!--  Dog Gender Label -->
+            <TextView
+                android:id="@+id/userGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/custom_shape"
+                android:clickable="false"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:text="" />
+        <!--  Owner Label -->
+            <TextView
+                android:id="@+id/dogOwner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_shape"
+                android:clickable="false"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

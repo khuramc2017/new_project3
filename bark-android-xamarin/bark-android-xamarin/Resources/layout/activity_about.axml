@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="7dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+    <!--  My Picture -->
+        <ImageView
+            android:id="@+id/myPicture"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleType="fitXY"
+            android:background="@drawable/custom_shape"
+            android:src="@drawable/profile_background"
+            android:contentDescription="" />
+    <!--  Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_shape"
+            android:clickable="false"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:text="App Developer: Alan Turing" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_shape"
+            android:clickable="false"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:text="I am awesome and you quote everything I say." />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_shape"
+            android:clickable="false"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:text="Email: hut8@turingmachine.com" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_shape"
+            android:clickable="false"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:text="App Version: 0.2" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCancel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight=".1"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_cancel" />
+</LinearLayout>
