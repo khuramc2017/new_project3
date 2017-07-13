@@ -4,8 +4,8 @@ using Android.OS;
 
 namespace barkandroidxamarin
 {
-    [Activity(Label = "bark-android-xamarin", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : Activity
+	[Activity(Label = "MainActivity")]
+	public class MainActivity : Activity
     {
         //int count = 1;
 
